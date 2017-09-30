@@ -3,7 +3,7 @@
        
     <bean id="itemService" class="com.cj.edas.itemcenter.ItemServiceImpl" />
     <!-- 提供  -->
-    <hsf:provider id="itemServiceProvider" interface="com.cj.edas.itemcenter.ItemService"
+    <hsf:provider id="itemServiceProvider" interface="com.cj.edas.provider.ItemService"
         ref="itemService" version="1.0.0" group="testHSF">
     </hsf:provider>
 </beans>
