@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.cj.test</groupId>
+  <artifactId>consumer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>consumer</name>
+  <dependencies>
+    <dependency>
+      <!-- Junit依赖包-->
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>3.0.5.RELEASE</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>3.0.5.RELEASE</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-servlet_2.5_spec</artifactId>
+        <version>1.2</version>
+    </dependency>
+    
+ 
+    
+    <!-- mysql依赖包-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.6</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.2.2</version>
+    </dependency>
+    <!-- Ibatits依赖包-->
+    <dependency>
+      <groupId>org.apache.servicemix.bundles</groupId>
+      <artifactId>org.apache.servicemix.bundles.ibatis-sqlmap</artifactId>
+      <version>2.3.4.726_4</version>
+    </dependency>
+    
+    <!-- 淘宝HSF服务的依赖包-->
+ 	 <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>servlet-api</artifactId>
+         <version>2.5</version>
+         <scope>provided</scope>
+     </dependency>
+     <dependency>
+         <groupId>com.cj.edas</groupId>
+         <artifactId>provider-api</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
+     </dependency>
+ 
+     <!-- pom 中添加edas-sdk依赖-->
+     <dependency>
+         <groupId>com.alibaba.edas</groupId>
+        <artifactId>edas-sdk</artifactId>
+         <version>1.5.0</version>
+     </dependency>
+ 
+  </dependencies>
+  <build>
+    <finalName>consumer</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+  </build>
+</project>
+ 
+ 
