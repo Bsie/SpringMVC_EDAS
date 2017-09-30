@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans> 
+    <!-- 消费  -->
+    <hsf:consumer id="item" interface="com.cj.edas.provider.ItemService"
+    version="1.0.0" group="testHSF">
+    </hsf:consumer>
+</beans>
